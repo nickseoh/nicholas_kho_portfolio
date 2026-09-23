@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Nicholas Kho — Portfolio</title>
+<style>
+  :root {
+    --bg: #22252a;
+    --surface: #2b2f35;
+    --line: #3a3f47;
+    --text: #d9dce1;
+    --muted: #9aa0a9;
+    --accent: #a8e6b0;
+    color-scheme: dark;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  *, *::before, *::after { box-sizing: inherit; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  nav { padding: 28px 0; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; }
+  nav .brand { color: var(--accent); font-weight: 700; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; }
+  nav a:hover { color: var(--accent); }
+  section { padding: 72px 0 24px; }
+  .label { color: var(--accent); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 20px; }
+  h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.1; margin: 0 0 24px; font-weight: 700; color: var(--text); }
+  h1 span { color: var(--accent); }
+  .intro { font-size: 17px; max-width: 60ch; color: var(--text); margin: 0; }
+  .card {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 22px; margin-bottom: 14px;
+  }
+  .card h3 { margin: 0; font-size: 17px; color: var(--text); }
+  .card p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .status { font-size: 12px; letter-spacing: .08em; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 3px 12px; white-space: nowrap; }
+  .status.done { background: var(--accent); color: var(--bg); font-weight: 700; }
+  .links { list-style: none; margin: 0; padding: 0; }
+  .links li { border-bottom: 1px solid var(--line); }
+  .links a {
+    display: flex; justify-content: space-between; gap: 16px; padding: 14px 0;
+    color: var(--text); text-decoration: none; font-size: 15px;
+  }
+  .links a span:last-child { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; text-align: right; }
+  .links a:hover span:first-child, .links a:hover span:last-child { color: var(--accent); }
+  footer { padding: 56px 0 40px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="brand">nicholas.kho</span>
+    <div><a href="#about">about</a><a href="#projects">projects</a><a href="#contact">contact</a></div>
+  </nav>
+
+  <section id="about" style="padding-top:48px">
+    <p class="label">01 / About</p>
+    <h1>Hi, I'm <span>Nicholas Kho</span>.</h1>
+    <p class="intro">A college student still figuring things out, discovering what I actually want to make with code — and learning to build real software along the way. Right now, I'm dreaming of creating games that people genuinely love to play someday.</p>
+  </section>
+
+  <section id="projects">
+    <p class="label">02 / Projects</p>
+    <div class="card">
+      <div><h3>YourOwn</h3><p>Portfolio Maker Prototype</p></div>
+      <span class="status">IN PROGRESS</span>
+    </div>
+    <div class="card">
+      <div><h3>Axis</h3><p>AI-Powered Ticket Management</p></div>
+      <span class="status done">COMPLETED</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="label">03 / Contact</p>
+    <ul class="links">
+      <li><a href="mailto:nicholaskho05@gmail.com"><span>Email</span><span>nicholaskho05@gmail.com</span></a></li>
+      <li><a href="https://github.com/nickseoh" target="_blank" rel="noopener"><span>GitHub</span><span>github.com/nickseoh</span></a></li>
+      <li><a href="https://www.linkedin.com/in/nicholas-kho-582485398/" target="_blank" rel="noopener"><span>LinkedIn</span><span>in/nicholas-kho</span></a></li>
+      <li><a href="https://devpost.com/nickseoh" target="_blank" rel="noopener"><span>Devpost</span><span>devpost.com/nickseoh</span></a></li>
+      <li><a href="https://docs.google.com/document/d/1dKB61YYtL-l0OQDp4U9qL-OQcqrhLGK8gY0y26PLTuY/edit?usp=sharing" target="_blank" rel="noopener"><span>Resume</span><span>Google Doc</span></a></li>
+    </ul>
+  </section>
+
+  <footer>© Nicholas Kho</footer>
+</div>
+</body>
+</html>
