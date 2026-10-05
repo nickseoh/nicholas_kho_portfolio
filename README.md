@@ -2,7 +2,7 @@
 
 A single-page portfolio built with plain HTML and CSS. No frameworks, no build step, no images.
 Pretty plain and simple. Plan to add more to this portfolio
-Note: This is Week 1 of FC Bootcamp
+- Note: This is Week 1 of FC Bootcamp
 
 ## Sections
 - About
