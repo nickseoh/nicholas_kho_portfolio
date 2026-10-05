@@ -47,6 +47,12 @@
   .card p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
   .status { font-size: 12px; letter-spacing: .08em; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 3px 12px; white-space: nowrap; }
   .status.done { background: var(--accent); color: var(--bg); font-weight: 700; }
+  .card .desc { margin-top: .75rem; line-height: 1.6; opacity: .85; }
+  .card .tags { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: .75rem 0 0; }
+  .card .tags li { font-size: .75rem; padding: .15rem .5rem; border: 1px solid var(--line); border-radius: 999px; }
+  .card .links { display: flex; gap: 1rem; margin-top: .75rem; }
+  .card .links a { font-size: .85rem; }
+  .card { align-items: flex-start; }
   .links { list-style: none; margin: 0; padding: 0; }
   .links li { border-bottom: 1px solid var(--line); }
   .links a {
@@ -73,14 +79,24 @@
 
   <section id="projects">
     <p class="label">02 / Projects</p>
-    <div class="card">
-      <div><h3>YourOwn</h3><p>Portfolio Maker Prototype</p></div>
-      <span class="status">IN PROGRESS</span>
+  <div>
+    <h3>Axis</h3>
+    <p>AI-Powered Ticket Management · HackUTD 2025</p>
+    <p class="desc">
+      An AI tool that auto-completes and verifies Jira tickets, scores their priority,
+      and shows data-center server racks in 3D to guide technicians through tasks.
+      Built with a team of 4. I led the front-end design and the final presentation.
+    </p>
+    <ul class="tags">
+      <li>Python</li><li>Streamlit</li><li>Plotly</li><li>OpenRouter API</li>
+    </ul>
+    <div class="links">
+      <a href="https://devpost.com/software/axis-9b7k5c" target="_blank" rel="noopener">Devpost ↗</a>
+      <a href="https://github.com/aaron-gheevarghese/nmc-2" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
-    <div class="card">
-      <div><h3>Axis</h3><p>AI-Powered Ticket Management</p></div>
-      <span class="status done">COMPLETED</span>
-    </div>
+  </div>
+  <span class="status done">COMPLETED</span>
+</div>
   </section>
 
   <section id="contact">
